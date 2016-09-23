@@ -15,11 +15,7 @@ table {
   margin-top: 35px;
 }
 
-th {
-  font-size: 0.9em;
-}
-
-.winners{
+.surveyParticipants {
   margin: 35px auto;
   width: 66%;
 }
