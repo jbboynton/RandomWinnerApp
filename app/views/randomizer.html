@@ -1,0 +1,32 @@
+<!--
+HTML template for the customers component.
+-->
+
+<!-- The list of customers, divided into a header and a body -->
+<section class="randomWinnerApp">
+
+  <!-- The list of customers, displayed in a table -->
+  <section class="winners">
+    <div class="row">
+      <div class="col-xs-12">
+
+        <button class="btn btn-success btn-block" name="pickWinner"
+            data-ng-click="vm.pickTheWinner()">Pick a winner!</button>
+
+        <table class="table table-striped">
+          <thead>
+            <th>PARTICIPANT NAME</th>
+            <th>EMAIL</th>
+          </thead>
+          <tbody>
+            <tr data-ng-repeat="participant in vm.participants">
+              <td>{{ participant.firstName + " " + participant.lastName }}</td>
+              <td>{{ participant.email }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div> <!-- /.col-xs-12 -->
+    </div> <!-- /.row -->
+  </section> <!-- /.listBody -->
+</section> <!-- /.customerList -->

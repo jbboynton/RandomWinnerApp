@@ -5,24 +5,19 @@
 var angular = require('angular');
 require('angular-route');
 require('angular-ui-bootstrap');
-require('reveal.js')
 
-var app = angular.module('lunch-presentation', [
+var app = angular.module('randomWinnerApp', [
   'ngRoute',
   'ui.bootstrap'
 ]);
 
-// require('./components');
-// require('./filters');
-
-// require('./services');
-// require('./controllers');
+require('./controllers');
 
 app.config(function($routeProvider) {
   $routeProvider
     .when('/', {
-      controller: 'HomeCtrl as home'
-      // templateUrl: 'app/views/home.html'
+      controller: 'RandomizerCtrl as vm',
+      templateUrl: 'app/views/randomizer.html'
     })
     .otherwise({ redirectTo: '/' });
 });

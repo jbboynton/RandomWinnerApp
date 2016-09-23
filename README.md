@@ -1,2 +1,3 @@
-# LunchPresentation
-A short presentation about the correlation between website performance and user experience.
+# RandomWinnerApp
+
+Picks a random winner from a group of email addresses.

@@ -1,0 +1,30 @@
+<!--
+HTML view for the add customer form.
+
+TODO: fix form submission.
+-->
+
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal"
+      aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h3 class="modal-title">We have a winner!</h3>
+</div> <!-- /.modal-header -->
+
+<div class="modal-body">
+
+  <h2><em>The winner is... </em>
+  <span class="text-info"><strong>{{ vm.theWinner.email }}!!</strong></span></h2>
+
+</div> <!-- /.modal-body -->
+
+<div class="modal-footer">
+  <div class="col-sm-offset-2 col-sm-10">
+    <button type="reset" class="btn btn-danger modalBtn"
+        data-ng-click="vm.dismiss()">
+      <i class="fa fa-times fa-2x"></i>
+      <br />Close
+    </button>
+  </div>
+</div> <!-- /.modal-footer -->
